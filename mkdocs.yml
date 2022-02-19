@@ -1,3 +1,84 @@
-site_name: My Docs
+# Project information
+site_name: Eric Koehli
+site_description: Eric Koehli's personal portfolio website.
+site_author: Eric Koehli
+site_url: https://ericpko.github.io
+
+# Repository
+# repo_name: ericpko/ericpko.github.io
+# repo_url: https://github.com/ericpko/ericpko.github.io
+repo_name: ericpko
+repo_url: https://github.com/ericpko
+edit_uri: ericpko.github.io/edit/main/docs/
+
+# Copyright
+copyright: Built by <a href="http://github.com/ericpko">Eric Koehli</a> &copy; 2022
+
+# Configuration
 theme:
   name: material
+  language: en
+  favicon: assets/favicon.png
+  font:
+    text: Alegreya
+    # text: Noto Sans
+    # text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: fontawesome/solid/code
+    repo: fontawesome/brands/github
+  features:
+    - header.autohide
+    - navigation.tabs
+    # - navigation.expand    # has all sidebars expanded when opened
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette: 
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: yellow
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    # Light theme
+    - media: "(prefers-color-scheme: light)"
+      scheme: carbon
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+# Footer
+extra:
+   social:
+      - icon: fontawesome/brands/github-square
+        link: https://github.com/ericpko
+      - icon: fontawesome/brands/linkedin
+        link: https://www.linkedin.com/in/erickoehli
+      # - icon: material/book-open-page-variant
+      #   link: https://ericpko.github.io
+
+extra_css:
+  - stylesheets/extra.css
+
+# Markdown extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details    # https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  # Used for images: https://squidfunk.github.io/mkdocs-material/reference/images/
+  - attr_list
+  - def_list
+  - meta
+  # Sidebar
+  - toc:
+      permalink: true
+
+# Plugins
+plugins:
+  - search:
+      lang:
+      - en
