@@ -13,25 +13,17 @@ hide:
 </figure>
 <!-- ![Image title](assets/images/tennisPic1.jpg){ width="500" } -->
 
-I recently graduated from the *University of Toronto*, St. George
-(downtown) campus with an HBSc in **Computer Science**.
-Throughout my program I experimented with a wide rage of different
-topics in CS and found myself most strongly drawn to the field of
-**Computer Graphics**. More specifically, some of the areas that
-interest me the most include physics-based simulation, animation,
-and different rendering techniques. I look forward to contributing to
-this important field of Computer Science, both academically and in the
-industry.
-
-I'm also eager to explore more about **modern web technologies**, **game design**,
-and **A.I.** research. Throughout my studies I have acquired great problem solving
-skills and have gained experience with a variety of programming languages
-and software tools. You can find a link to my [Github page here](https://github.com/ericpko){ target="_blank" }
-or check out my [resume](/assets/CV_2.pdf){ target="_blank" } for more information.
+&emsp;I recently graduated from the *University of Toronto* St. George
+(downtown) campus with an HBSc in **Computer Science**. My favorite
+topics in CS include **computer graphics**, game design, and operating
+systems. Throughout my studies I have acquired great problem solving
+skills and have gained experience with a variety of programming
+languages and software tools. Currently, my language of choice is
+the **Rust** programming language. The more I learn about Rust, the
+more I love this language; it's absolutely brilliant!
 
 On a personal level, I'm a well-rounded individual who enjoys playing racket
-sports such as tennis, badminton, pickleball, and table tennis. I have several
-achievements in tennis, from which I used to compete competitively. I also
+sports such as tennis, badminton, pickleball, and table tennis. I also
 enjoy paddleboarding, working out, and maintaining a healthy lifestyle.
 
 
