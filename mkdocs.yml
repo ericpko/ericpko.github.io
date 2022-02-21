@@ -30,16 +30,18 @@ theme:
   features:
     - header.autohide
     - navigation.tabs
-    # - navigation.expand    # has all sidebars expanded when opened
+    - navigation.sections
     - navigation.top
+    - toc.follow
+    # - toc.integrate
     - search.highlight
     - search.suggest
   palette: 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: light blue
-      accent: yellow
+      primary: white
+      accent: red
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -63,22 +65,79 @@ extra:
       #   link: https://ericpko.github.io
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Markdown extensions
 markdown_extensions:
+  # MathJax
+  - pymdownx.arithmatex:
+      generic: true
+  # Admonition
   - admonition
   - pymdownx.details    # https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      # linenums: true
+      # linenums_style: table
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
   # Used for images: https://squidfunk.github.io/mkdocs-material/reference/images/
   - attr_list
-  - def_list
+  - md_in_html
   - meta
+  # Formatting text
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Icons + Emojis
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  # Lists
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   # Sidebar
   - toc:
-      permalink: true
+      permalink: ⚓︎
 
 # Plugins
 plugins:
   - search:
       lang:
       - en
+
+
+
+# ---------- Navigation ----------
+# This section isn't needed and MkDocs will set it up based on the file structure etc.
+# but the problem is that it puts my tabs in a random order.
+# You can put - Name: file/location.md and this will make the sidebar say "Name"
+# or you can put - file/location.md and this will make the sidebar say whatever
+# the first '# Something' is in the file/location.md
+nav:
+  - Home: index.md
+  - Projects:
+    - projects/sph-sim.md
+    - Ray Tracer: projects/ray-tracer.md
+    - A Weathery Journey: projects/a-weathery-journey.md
+  - Loop:
+    - loop/index.md
+    - Problems:
+      - Matrices:
+        - Looping Diagonally: loop/problems/matrices/looping-diagonally.md
+      - Raster Graphics:
+        - Raster Images: loop/problems/raster graphics/01-raster-images.md
+        - loop/problems/raster graphics/02-accessing-rgb.md
+        - loop/problems/raster graphics/03-applying-convolution.md
+  - Contact: contact.md
