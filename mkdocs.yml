@@ -128,6 +128,7 @@ plugins:
 nav:
   - Home: index.md
   - Projects:
+    - Boids: projects/boids.md
     - projects/sph-sim.md
     - Ray Tracer: projects/ray-tracer.md
     - A Weathery Journey: projects/a-weathery-journey.md
