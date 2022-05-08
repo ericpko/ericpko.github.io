@@ -13,17 +13,18 @@ hide:
 </figure>
 <!-- ![Image title](assets/images/tennisPic1.jpg){ width="500" } -->
 
-&emsp;I recently graduated from the *University of Toronto* St. George
-(downtown) campus with an HBSc in **Computer Science**. My favorite
-topics in CS include **computer graphics**, game design, and operating
-systems. Throughout my studies I have acquired great problem solving
+&emsp;Hello! I'm a recent graduate from the *University of Toronto* St. George
+(downtown) campus with an HBSc in **Computer Science**. Throughout my studies 
+I've acquired great problem solving
 skills and have gained experience with a variety of programming
-languages and software tools. Currently, my language of choice is
-the **Rust** programming language. The more I learn about Rust, the
-more I love this language; it's absolutely brilliant!
+languages and software tools. The topics that I'm most passionate about include
+*graphics*, *web development*, and *game design*. I'm always excited to experiment
+with the latest and greatest tech stacks! 
+Lately, I've been obsessed with the *Rust Programming Language* and I'm eager to learn
+more about WebAssembly.
 
 On a personal level, I'm a well-rounded individual who enjoys playing racket
-sports such as tennis, badminton, pickleball, and table tennis. I also
+sports such as tennis, pickleball, badminton, and table tennis. I also
 enjoy paddleboarding, working out, and maintaining a healthy lifestyle.
 
 
